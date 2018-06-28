@@ -7,7 +7,13 @@ curl "http://localhost:4741/recipes/${ID}" \
   --header "Content-Type: application/json" \
   --data '{
     "recipe": {
-      "email": "'"${EMAIL}"'"
+      "name": "'"${NAME}"'",
+      "description": "'"${DESCRIPTION}"'",
+      "extract": "'"${EXTRACT}"'",
+      "grains": "'"${GRAINS}"'",
+      "hops": "'"${HOPS}"'",
+      "yeast": "'"${YEAST}"'",
+      "directions": "'"${DIRECTIONS}"'"
     }
   }'
 
