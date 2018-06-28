@@ -3,11 +3,11 @@ class CreateRecipes < ActiveRecord::Migration[5.1]
     create_table :recipes do |t|
       t.string :name
       t.string :description
-      t.array :extract
-      t.array :grains
-      t.array :hops
-      t.array :yeast
-      t.array :directions
+      t.string :extract
+      t.string :grains
+      t.string :hops
+      t.string :yeast
+      t.string :directions
 
       t.timestamps
     end
