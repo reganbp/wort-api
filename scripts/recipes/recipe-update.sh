@@ -8,13 +8,14 @@ curl "http://localhost:4741/recipes/${ID}" \
   --data '{
     "recipe": {
       "name": "'"${NAME}"'",
-      "description": "'"${DESCRIPTION}"'",
-      "extract": "'"${EXTRACT}"'",
-      "grains": "'"${GRAINS}"'",
-      "hops": "'"${HOPS}"'",
-      "yeast": "'"${YEAST}"'",
-      "directions": "'"${DIRECTIONS}"'"
     }
   }'
 
 echo
+
+# "description": "'"${DESCRIPTION}"'",
+# "extract": "'"${EXTRACT}"'",
+# "grains": "'"${GRAINS}"'",
+# "hops": "'"${HOPS}"'",
+# "yeast": "'"${YEAST}"'",
+# "directions": "'"${DIRECTIONS}"'"
