@@ -1,5 +1,5 @@
 class RecipesController < OpenReadController
-  before_action :set_recipe, only: [:show, :update, :destroy]
+  before_action :set_recipe, only: [:update, :destroy]
 
   # GET /recipes
   def index
@@ -10,6 +10,7 @@ class RecipesController < OpenReadController
 
   # GET /recipes/1
   def show
+    @recipe = Recipe.find(params[:id])
     render json: @recipe
   end
 
