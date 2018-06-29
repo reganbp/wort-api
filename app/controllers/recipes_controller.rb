@@ -15,9 +15,9 @@ class RecipesController < OpenReadController
 
   # POST /recipes
   def create
-    p "current user is", current_user
-    p "current user.recipes is", current_user.recipes
-    p "recipe parameters is", recipe_params
+    # p "current user is", current_user
+    # p "current user.recipes is", current_user.recipes
+    # p "recipe parameters is", recipe_params
     @recipe = current_user.recipes.build(recipe_params)
 
     if @recipe.save
