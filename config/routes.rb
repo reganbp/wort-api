@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   delete '/sign-out' => 'users#signout'
   patch '/change-password' => 'users#changepw'
   post '/recipes' => 'recipes#create'
-  patch '/recipes/'
+  patch '/recipes/:id' => 'recipes#update'
 end

@@ -7,7 +7,7 @@ curl "http://localhost:4741/recipes/${ID}" \
   --header "Content-Type: application/json" \
   --data '{
     "recipe": {
-      "name": "'"${NAME}"'",
+      "name": "'"${NAME}"'"
     }
   }'
 
