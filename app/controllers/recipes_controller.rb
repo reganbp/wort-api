@@ -45,7 +45,7 @@ class RecipesController < OpenReadController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_recipe
-    @recipe = Recipe.find(params[:id])
+    @recipe = current_user.recipes.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
